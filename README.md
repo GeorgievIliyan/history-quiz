@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📜 Строителите на България - History Quiz App
 
-## Getting Started
+A vintage-styled Bulgarian history quiz application featuring questions about prominent figures from 1878 onwards. Built with Next.js and styled with a classical 1900s aesthetic.
 
-First, run the development server:
+## ✨ Features
 
+- 🎲 Random selection of 15 questions per session (3 from each personality)
+- 📊 Score tracking and results saved in browser localStorage
+- 📜 Authentic 1900s vintage paper design
+- 🇧🇬 Bulgarian language interface
+- 📱 Responsive design
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16.2.4
+- **Styling:** Tailwind CSS
+- **Fonts:** Playfair Display, Crimson Text
+- **Icons:** Lucide React
+- **Storage:** Browser localStorage (no backend)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/GeorgievIliyan/history-quiz.git
+cd history-quiz
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 📝 Quiz Data Structure
 
-To learn more about Next.js, take a look at the following resources:
+Questions are organized by personality in `lib/quiz-data.ts`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```typescript
+{
+  name: "Personality Name",
+  questions: [
+    {
+      question: "Question text?",
+      answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+      correct: "Correct Answer"
+    }
+  ]
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

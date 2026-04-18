@@ -122,9 +122,9 @@ export default function WelcomeScreen({ onStart, onHistory, attemptCount }: Welc
           <button
             onClick={handleStart}
             className="vintage-btn flex-1 text-primary-foreground font-serif font-semibold text-lg py-3.5 px-6 rounded-sm tracking-wide uppercase flex items-center justify-center gap-2 focus:outline-none"
-          >
+          >Нача
             <span className="text-xl">⚜</span>
-            <span>Начало на Изпитанието</span>
+            <span>Начало на теста</span>
           </button>
           {attemptCount > 0 && (
             <button
