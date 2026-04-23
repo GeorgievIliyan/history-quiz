@@ -69,7 +69,7 @@ export default function WelcomeScreen({ onStart, onHistory, attemptCount }: Welc
             Викторина за знатоци
           </p>
           <p className="text-sm text-muted-foreground font-serif mt-1">
-            1878 — наши дни
+            1878 — 1939
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function WelcomeScreen({ onStart, onHistory, attemptCount }: Welc
           <button
             onClick={handleStart}
             className="vintage-btn flex-1 text-primary-foreground font-serif font-semibold text-lg py-3.5 px-6 rounded-sm tracking-wide uppercase flex items-center justify-center gap-2 focus:outline-none"
-          >Нача
+          >
             <span className="text-xl">⚜</span>
             <span>Начало на теста</span>
           </button>
@@ -143,12 +143,12 @@ export default function WelcomeScreen({ onStart, onHistory, attemptCount }: Welc
       {/* Footer */}
       <div className="mt-10 text-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <div className="ornate-divider max-w-xs mx-auto">
-          <span className="text-gold-accent font-serif italic text-sm tracking-wide">
-            Anno Domini MCMXXV
-          </span>
+            <span className="text-gold-accent font-serif italic text-sm tracking-wide">
+              Иван Вазов
+            </span>
         </div>
         <p className="text-xs text-muted-foreground mt-3 font-serif italic max-w-sm mx-auto">
-          &ldquo;Отечеството ни е свещено за нас — да го пазим и да го обичаме.&rdquo;
+          &ldquo;И ний сме дали нещо на света и на вси славяни книга да четат.&rdquo;
         </p>
 
         {/* Credits */}
@@ -160,7 +160,7 @@ export default function WelcomeScreen({ onStart, onHistory, attemptCount }: Welc
             Илиян Георгиев
           </p>
           <p className="text-xs text-muted-foreground font-serif italic">
-            10в клас
+            10 клас
           </p>
         </div>
 
